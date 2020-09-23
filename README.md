@@ -21,6 +21,10 @@ git config --global user.email "usr-name-here@gmail.com"
 git config --global user.name "git-name-hehre"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
+ ~  echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.config/fish/config.fish
+ ~  echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+ ~  echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+
 ```
 
 Using the alias as git command for add dotfiles to git repository...
@@ -46,4 +50,4 @@ config push --set-upstream origin master
 
 ```
 
-
+# Try to config and use vim for C++ development

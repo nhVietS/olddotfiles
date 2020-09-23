@@ -98,4 +98,4 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 eval `dircolors ~/.solarized/dircolors.ansi-dark`
-
+alias config='/usr/bin/git --git-dir=/home/viet/.myconf/ --work-tree=/home/viet'
