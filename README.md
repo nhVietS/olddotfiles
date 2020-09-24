@@ -21,9 +21,9 @@ git config --global user.email "usr-name-here@gmail.com"
 git config --global user.name "git-name-hehre"
 alias config='/usr/bin/git --git-dir=$HOME/dotfiles/ --work-tree=$HOME'
 config config --local status.showUntrackedFiles no
- ~  echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.config/fish/config.fish
- ~  echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.zshrc
- ~  echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.bashrc
+echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.config/fish/config.fish
+echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.zshrc
+echo "alias config='/usr/bin/git --git-dir=$HOME/.myconfg/ --work-tree=$HOME'" >> $HOME/.bashrc
 
 ```
 
@@ -51,3 +51,38 @@ config push --set-upstream origin master
 ```
 
 # Try to config and use vim for C++ development
+
+# Terminal color scheme in Ubuntu 20.04
+require:
+sudo apt-get install dconf-cli
+git clone repo color ~/.color-name
+cd ~/.color-name && ./install.sh
+
+# custome fish greetings functions
+gedit ~/.config/fish/functions/fish_greeting.fish
+function fish_greeting
+	# Output it to the console
+	printf (set_color F90)"Welcome! Happy hacking, Happy FISHY"
+	printf (set_color F90)"
+                 ___
+  ___======____=---=)
+ /T           \_--===)
+ [ \ (0)    \~  \_  -==)
+  \       / )J~~  \_ -=)
+   \\____/  )JJ~~~  \) 
+    \______/JJJ~~~~  \)
+    / \ ,   \J~~~~~   \)
+   (-\)\=[\TT\~~~  	&&__
+   (V\)  (\TT\)_      	   \==__
+    \V    \TT\) ===_____     \JJJ)
+          \V       \_) \J\T\T\J\)
+                       /J\JT\J\J\)
+                       (\J7J 7J7J)
+                        (UJ)
+"
+end
+
+Change Terminal Emulator from Gnome Terminal to Xterm
+sudo update-alternatives --config x-terminal-emulator
+
+#
