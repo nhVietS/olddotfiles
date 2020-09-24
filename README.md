@@ -59,6 +59,7 @@ git clone repo color ~/.color-name
 cd ~/.color-name && ./install.sh
 
 # custome fish greetings functions
+```sh
 gedit ~/.config/fish/functions/fish_greeting.fish
 function fish_greeting
 	# Output it to the console
@@ -81,7 +82,7 @@ function fish_greeting
                         (UJ)
 "
 end
-
+```
 Change Terminal Emulator from Gnome Terminal to Xterm
 sudo update-alternatives --config x-terminal-emulator
 
