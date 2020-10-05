@@ -53,13 +53,19 @@ config push --set-upstream origin master
 # Try to config and use vim for C++ development
 
 # Terminal color scheme in Ubuntu 20.04
-require:
 sudo apt-get install dconf-cli
-git clone repo color ~/.color-name
-cd ~/.color-name && ./install.sh
+git clone https://github.com/dracula/gnome-terminal.git ~/.dracula
+cd ~/.dracula && ./install.sh
 
-# custome fish greetings functions
+# My custom fish greetings functions
 ```sh
+# web UI config command
+fish_config colors
+
+# add alias
+echo "alias vim='nvim'" >> $HOME/.config/fish/config.fish
+
+
 gedit ~/.config/fish/functions/fish_greeting.fish
 function fish_greeting
 	# Output it to the console
