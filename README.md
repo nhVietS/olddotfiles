@@ -82,9 +82,9 @@ function fish_greeting
    (-\)\=[\TT\~~~  	&&__
    (V\)  (\TT\)_      	   \==__
     \V    \TT\) ===_____     \JJJ)
-          \V       \_) \J\T\T\J\)
-                       /J\JT\J\J\)
-                       (\J7J 7J7J)
+          \V       \_) \J\T\TlJ\)
+                       /J\JT\J J\)
+                       (\J7J 7Jl)
                         (UJ)
 "
 end
