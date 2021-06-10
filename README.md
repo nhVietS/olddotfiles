@@ -1,5 +1,5 @@
 # How To Set Up My Dotfiles
-### The Simple Way for Ubuntu 20.04
+
 # Technique
 
 I spend hours to try create a new bare repository to contains my dotfiles and make it easy to switch to others linux machine: 
@@ -8,7 +8,7 @@ I spend hours to try create a new bare repository to contains my dotfiles and ma
 - [What is git --bare repository?](http://gitready.com/advanced/2009/02/01/push-to-only-bare-repositories.html)
 - [error: failed to push some refs to 'https://github.com/<your-repo>/dotfiles'
 ](https://stackoverflow.com/questions/39399804/updates-were-rejected-because-the-tip-of-your-current-branch-is-behind-its-remot)
-- You SHOULD NOT follow [this](https://www.atlassian.com/git/tutorials/dotfiles) blog, but it still gives me some ideas to organize the repo when moving to other machine.
+- Not succesfull with [The best way to store your dotfiles: A bare Git repository](https://www.atlassian.com/git/tutorials/dotfiles)
 ### Installation
 
 Install the git repository with --bare option .
