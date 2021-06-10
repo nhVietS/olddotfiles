@@ -2,7 +2,7 @@
 ### The Simple Way for Ubuntu 20.04
 # Technique
 
-I spend hours to try create a new bare repository to contains my dotfiles and make it easy to swtich to others unix machine: 
+I spend hours to try create a new bare repository to contains my dotfiles and make it easy to switch to others linux machine: 
 - [The flow to create repository avoid "please tell me who you are" - StackOverFlow](https://stackoverflow.com/questions/11656761/git-please-tell-me-who-you-are-error)
 - [What do you use to manage dotfiles? - HackerNews](https://news.ycombinator.com/item?id=11070797)
 - [What is git --bare repository?](http://gitready.com/advanced/2009/02/01/push-to-only-bare-repositories.html)
@@ -49,67 +49,3 @@ config push --set-upstream origin master
 # config push -f --set-upstream origin master
 
 ```
-
-# Try to config and use vim for C++ development
-
-# Terminal color scheme in Ubuntu 20.04
-sudo apt-get install dconf-cli
-git clone https://github.com/dracula/gnome-terminal.git ~/.dracula
-cd ~/.dracula && ./install.sh
-
-# My custom fish greetings functions
-```sh
-# web UI config command
-fish_config colors
-
-# add alias
-echo "alias vim='nvim'" >> $HOME/.config/fish/config.fish
-
-
-gedit ~/.config/fish/functions/fish_greeting.fish
-<<<<<<< HEAD
-function fish_greeting
-	# Output it to the console
-	printf (set_color F90)"Welcome! Happy hacking, Happy FISHY"
-	printf (set_color F90)"
-                 ___
-  ___======____=---=)
- /T           \_--===)
- [ \ (0)    \~  \_  -==)
-  \       / )J~~  \_ -=)
-   \\____/  )JJ~~~  \) 
-    \______/JJJ~~~~  \)
-    / \ ,   \J~~~~~   \)
-   (-\)\=[\TT\~~~  	&&__
-   (V\)  (\TT\)_      	   \==__
-    \V    \TT\) ===_____     \JJJ)
-          \V       \_) \J\T\TlJ\)
-                       /J\JT\J J\)
-                       (\J7J 7Jl)
-                        (UJ)
-=======
-function logo
-    echo '                 '(set_color F00)'___
-  ___======____='(set_color FF7F00)'-'(set_color FF0)'-'(set_color FF7F00)'-='(set_color F00)')
-/T            \_'(set_color FF0)'--='(set_color FF7F00)'=='(set_color F00)')
-[ \ '(set_color FF7F00)'('(set_color FF0)'0'(set_color FF7F00)')   '(set_color F00)'\~    \_'(set_color FF0)'-='(set_color FF7F00)'='(set_color F00)')
- \      / )J'(set_color FF7F00)'~~    \\'(set_color FF0)'-='(set_color F00)')
-  \\\\___/  )JJ'(set_color FF7F00)'~'(set_color FF0)'~~   '(set_color F00)'\)
-   \_____/JJJ'(set_color FF7F00)'~~'(set_color FF0)'~~    '(set_color F00)'\\
-   '(set_color FF7F00)'/ '(set_color FF0)'\  '(set_color FF0)', \\'(set_color F00)'J'(set_color FF7F00)'~~~'(set_color FF0)'~~     '(set_color FF7F00)'\\
-  (-'(set_color FF0)'\)'(set_color F00)'\='(set_color FF7F00)'|'(set_color FF0)'\\\\\\'(set_color FF7F00)'~~'(set_color FF0)'~~       '(set_color FF7F00)'L_'(set_color FF0)'_
-  '(set_color FF7F00)'('(set_color F00)'\\'(set_color FF7F00)'\\)  ('(set_color FF0)'\\'(set_color FF7F00)'\\\)'(set_color F00)'_           '(set_color FF0)'\=='(set_color FF7F00)'__
-   '(set_color F00)'\V    '(set_color FF7F00)'\\\\'(set_color F00)'\) =='(set_color FF7F00)'=_____   '(set_color FF0)'\\\\\\\\'(set_color FF7F00)'\\\\
-          '(set_color F00)'\V)     \_) '(set_color FF7F00)'\\\\'(set_color FF0)'\\\\JJ\\'(set_color FF7F00)'J\)
-                      '(set_color F00)'/'(set_color FF7F00)'J'(set_color FF0)'\\'(set_color FF7F00)'J'(set_color F00)'T\\'(set_color FF7F00)'JJJ'(set_color F00)'J)
-                      (J'(set_color FF7F00)'JJ'(set_color F00)'| \UUU)
-                       (UU)'(set_color normal)
-end
->>>>>>> 575e79c1d38b8592564aa4cc10828462a8c0d766
-"
-end
-```
-Change Terminal Emulator from Gnome Terminal to Xterm
-sudo update-alternatives --config x-terminal-emulator
-
-#
