@@ -18,9 +18,13 @@ super + F12
 # SUPER + ... KEYS
 #################################################################
 
-#urxvt,pavucontrol,geany,meld
-super + o ; {t,v,e,m}
-    {urxvt,pavucontrol,geany,meld}
+#urxvt,pavucontrol,geany,meld,chrome,gimp
+super + o ; {t,v,e,m,c,g}
+    {urxvt,pavucontrol,geany,meld,chromium -no-default-browser-check,gimp}
+
+#ScreenRecorder
+super + o ; {r,d}
+    {simplescreenrecorder,gparted}
 
 #arcolinux-logout
 super + x
@@ -74,7 +78,7 @@ ctrl + alt + e
     arcolinux-tweak-tool
 
 #Rofi theme selector
-ctrl + alt + r
+ctrl + alt + t
     rofi-theme-selector
 
 #Keyboard dependent
@@ -150,7 +154,7 @@ XF86AudioLowerVolume
     amixer set Master 10%-
 
 #Adjust volume
-ctrl + alt + bracket{left,right}
+alt + bracket{left,right}
     amixer set Master 10%{-,+}
 
 #Mute

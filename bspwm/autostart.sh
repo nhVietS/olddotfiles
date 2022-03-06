@@ -50,9 +50,9 @@ picom --config $HOME/.config/bspwm/picom.conf &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 #/usr/lib/xfce4/notifyd/xfce4-notifyd &
 #run volumeicon &
-ibus-daemon -drx
-xinput set-prop 'pointer:Logitech B330/M330/M3' "libinput Accel Speed" 1
-xinput set-prop 'DELL0786:00 06CB:7E92 Touchpad' "libinput Accel Speed" 1
+ibus-daemon -drx &
+xinput set-prop 'DELL0786:00 06CB:7E92 Touchpad' "libinput Accel Speed" 0.8 &
+libinput-gestures-setup start &
 #birdtray &
 #nitrogen --restore &
 #run caffeine &
